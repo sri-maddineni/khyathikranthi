@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
         // - Nodemailer with SMTP
         // - AWS SES
 
-        // Example email content
+        // Example email content (will be used when email service is configured)
         const emailContent = `
 New Contact Form Submission
 
@@ -54,6 +54,7 @@ This message was sent from the Khyathi Associates website contact form.
             phone,
             subject,
             message,
+            emailContent, // Include emailContent in log for reference
         });
 
         // In production, you would send an email here

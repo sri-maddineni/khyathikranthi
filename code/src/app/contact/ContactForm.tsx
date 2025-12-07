@@ -40,7 +40,7 @@ export default function ContactForm() {
                 setStatus('error');
                 setErrorMessage(data.message || 'Something went wrong. Please try again.');
             }
-        } catch (error) {
+        } catch {
             setStatus('error');
             setErrorMessage('Network error. Please check your connection and try again.');
         }
@@ -147,7 +147,7 @@ export default function ContactForm() {
             {status === 'success' && (
                 <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg flex items-center space-x-2">
                     <FaCheckCircle />
-                    <span>Message sent successfully! We'll get back to you soon.</span>
+                    <span>Message sent successfully! We&apos;ll get back to you soon.</span>
                 </div>
             )}
 

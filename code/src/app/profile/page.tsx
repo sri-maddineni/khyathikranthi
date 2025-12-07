@@ -2,12 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import {
     FaGraduationCap,
-    FaBriefcase,
     FaAward,
     FaEnvelope,
     FaPhone,
     FaMapMarkerAlt,
-    FaLinkedin,
     FaGithub,
     FaTwitter,
     FaGlobe,
