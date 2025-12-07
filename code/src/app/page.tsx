@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { FaGavel, FaBalanceScale, FaHandshake, FaShieldAlt } from 'react-icons/fa';
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="flex justify-center mb-6">
+            {/* <div className="flex justify-center mb-6">
               <Image
                 src="/images/khyathi.png"
                 alt="Khyathi Associates Logo"
@@ -41,7 +41,7 @@ export default function Home() {
                 className="object-contain"
                 priority
               />
-            </div>
+            </div> */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Khyathi Associates
             </h1>

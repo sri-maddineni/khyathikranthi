@@ -1,4 +1,4 @@
-import ContactForm from './ContactForm';
+// import ContactForm from './ContactForm'; // Commented out - will be enabled when API is configured
 import {
     FaPhone,
     FaEnvelope,
@@ -32,7 +32,7 @@ export default function Contact() {
         {
             icon: <FaLinkedin className="text-2xl" />,
             label: 'LinkedIn',
-            href: '#',
+            href: 'https://linkedin.com/in/kranthirebel5',
         },
         {
             icon: <FaGithub className="text-2xl" />,
@@ -86,13 +86,43 @@ export default function Contact() {
                         ))}
                     </div>
 
-                    {/* Contact Form */}
+                    {/* Contact Form - Commented out until API is configured */}
+                    {/* 
                     <div className="max-w-2xl mx-auto">
                         <div className="bg-slate-50 p-8 rounded-lg shadow-md">
                             <h2 className="text-2xl font-bold text-slate-900 mb-6 text-center">
                                 Send Us a Message
                             </h2>
                             <ContactForm />
+                        </div>
+                    </div>
+                    */}
+
+                    {/* Alternative: Direct contact methods */}
+                    <div className="max-w-2xl mx-auto">
+                        <div className="bg-slate-50 p-8 rounded-lg shadow-md text-center">
+                            <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                                Get in Touch
+                            </h2>
+                            <p className="text-gray-700 mb-6">
+                                Please contact us directly via phone or email for legal consultation and representation.
+                            </p>
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a
+                                    href="tel:+919963820823"
+                                    className="bg-amber-400 text-slate-900 px-6 py-3 rounded-lg font-semibold hover:bg-amber-500 transition-colors duration-200 shadow-lg inline-flex items-center justify-center space-x-2"
+                                >
+                                    <FaPhone />
+                                    <span>Call Us</span>
+                                </a>
+                                <a
+                                    href="mailto:bkranthinaidu@yahoo.com"
+                                    className="bg-slate-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-700 transition-colors duration-200 shadow-lg inline-flex items-center justify-center space-x-2"
+                                >
+                                    <FaEnvelope />
+                                    <span>Email Us</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 

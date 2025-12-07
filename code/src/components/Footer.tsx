@@ -79,8 +79,26 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-slate-700 mt-8 pt-8 text-center text-sm">
-                    <p>&copy; {new Date().getFullYear()} Khyathi Associates. All rights reserved.</p>
+                <div className="border-t border-slate-700 mt-8 pt-8">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                        <p>&copy; {new Date().getFullYear()} Khyathi Associates. All rights reserved.</p>
+                        <div className="flex items-center space-x-2">
+                            <span className="text-gray-400">Developed by</span>
+                            <a
+                                // href="tel:+917382891977"
+                                className="text-amber-400 hover:text-amber-300 transition-colors font-semibold"
+                            >
+                                Sreekanth Freelance
+                            </a>
+                            <span className="text-gray-400">|</span>
+                            <a
+                                href="tel:+917382891977"
+                                className="text-amber-400 hover:text-amber-300 transition-colors"
+                            >
+                                +91 7382891977
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
