@@ -63,7 +63,7 @@ This message was sent from the Khyathi Associates website contact form.
         const resend = new Resend(process.env.RESEND_API_KEY);
         await resend.emails.send({
             from: 'contact@khyathiassociates.com',
-            to: 'bkranthinaidu@yahoo.com',
+            to: 'advkranthinaidu@yahoo.com',
             subject: `Contact Form: ${subject}`,
             text: emailContent,
         });

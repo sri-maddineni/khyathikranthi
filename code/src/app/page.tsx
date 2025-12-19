@@ -1,6 +1,18 @@
 import Link from 'next/link';
-// import Image from 'next/image';
-import { FaGavel, FaBalanceScale, FaHandshake, FaShieldAlt } from 'react-icons/fa';
+import { Metadata } from 'next';
+import Statistics from '@/components/Statistics';
+import { FaGavel, FaBalanceScale, FaHandshake, FaShieldAlt, FaTrophy, FaUsers, FaSmile, FaPhone } from 'react-icons/fa';
+
+export const metadata: Metadata = {
+  title: "Home - Expert Legal Services | Khyathi Associates",
+  description: "Khyathi Associates - Expert legal representation in civil, criminal, corporate, and public law matters. 1100+ successful cases, 23+ expert advocates. Offices across India. Contact us for legal consultation.",
+  keywords: "legal services, law firm, advocates, lawyers, legal consultation, Supreme Court, High Court, NCLT, civil litigation, criminal law, corporate law",
+  openGraph: {
+    title: "Khyathi Associates - Expert Legal Services",
+    description: "Expert legal representation in civil, criminal, corporate, and public law matters. 1100+ successful cases.",
+    url: "https://khyathiassociates.com",
+  },
+};
 
 export default function Home() {
   const features = [
@@ -71,6 +83,57 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Statistics Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-50 to-slate-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+              Our Track Record
+            </h2>
+            <div className="w-24 h-1 bg-amber-400 mx-auto mb-6"></div>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Proven results and trusted expertise in delivering successful legal outcomes
+            </p>
+          </div>
+          <Statistics
+            stats={[
+              {
+                icon: <FaGavel className="text-4xl lg:text-5xl" />,
+                value: 455,
+                suffix: '+',
+                label: 'Expert Attorneys Cases',
+              },
+              {
+                icon: <FaTrophy className="text-4xl lg:text-5xl" />,
+                value: 1100,
+                suffix: '+',
+                label: 'Successful Cases',
+              },
+              {
+                icon: <FaUsers className="text-4xl lg:text-5xl" />,
+                value: 23,
+                suffix: '+',
+                label: 'Expert Advocates',
+              },
+              {
+                icon: <FaSmile className="text-4xl lg:text-5xl" />,
+                value: 955,
+                suffix: '+',
+                label: 'Happy Clients',
+              },
+            ]}
+          />
+          <div className="mt-12 text-center">
+            <Link
+              href="/cases"
+              className="inline-block bg-amber-400 text-slate-900 px-8 py-3 rounded-lg font-semibold hover:bg-amber-500 transition-colors duration-200 shadow-lg"
+            >
+              Explore Our Expertise
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -91,17 +154,24 @@ export default function Home() {
               regulatory compliance, and multi-jurisdictional advisory. We combine legal expertise
               with technological proficiency to deliver precise, outcome-driven solutions.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              With offices in Hyderabad and Vijayawada, we serve clients across India, representing
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              With offices in New Delhi, Hyderabad, Amaravati, Mumbai, Kolkata, Kochi, Chennai, Dispur (Assam), Lucknow, Bengaluru, and Bhopal, we serve clients across India, representing
               them in Supreme Court, High Courts, and various tribunals including NCLT/NCLAT.
             </p>
-            <div className="mt-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/about"
-                className="text-amber-600 hover:text-amber-700 font-semibold text-lg inline-flex items-center"
+                className="bg-amber-400 text-slate-900 px-8 py-3 rounded-lg font-semibold hover:bg-amber-500 transition-colors duration-200 shadow-lg text-center"
               >
-                Learn More About Us →
+                Learn More About Us
               </Link>
+              <a
+                href="tel:+919963820823"
+                className="bg-slate-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-800 transition-colors duration-200 shadow-lg text-center inline-flex items-center justify-center space-x-2"
+              >
+                <FaPhone />
+                <span>Call Us Now</span>
+              </a>
             </div>
           </div>
         </div>
@@ -132,6 +202,14 @@ export default function Home() {
                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Link
+              href="/profile"
+              className="text-amber-600 hover:text-amber-700 font-semibold text-lg inline-flex items-center"
+            >
+              Meet Our Expert Advocate →
+            </Link>
           </div>
         </div>
       </section>

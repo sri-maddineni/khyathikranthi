@@ -58,21 +58,29 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm">
                             <li className="flex items-start space-x-3">
                                 <FaMapMarkerAlt className="text-amber-400 mt-1 flex-shrink-0" />
-                                <span>Hyderabad & Vijayawada, India</span>
+                                <div className="text-xs">
+                                    <p className="mb-1">Offices in:</p>
+                                    <p>New Delhi, Hyderabad, Amaravati, Mumbai, Kolkata, Kochi, Chennai, Dispur (Assam), Lucknow, Bengaluru, Bhopal</p>
+                                </div>
                             </li>
-                            <li className="flex items-center space-x-3">
-                                <FaPhone className="text-amber-400 flex-shrink-0" />
-                                <a href="tel:+919963820823" className="hover:text-amber-400 transition-colors">
-                                    +91 9963820823
-                                </a>
+                            <li className="flex items-start space-x-3">
+                                <FaPhone className="text-amber-400 mt-1 flex-shrink-0" />
+                                <div className="space-y-1">
+                                    <a href="tel:+919963820823" className="hover:text-amber-400 transition-colors block">
+                                        +91 9963820823
+                                    </a>
+                                    <a href="tel:+919440176986" className="hover:text-amber-400 transition-colors block text-xs">
+                                        +91 94401 76986 (Valmiki Arjun Yellarthi)
+                                    </a>
+                                </div>
                             </li>
                             <li className="flex items-center space-x-3">
                                 <FaEnvelope className="text-amber-400 flex-shrink-0" />
                                 <a
-                                    href="mailto:bkranthinaidu@yahoo.com"
+                                    href="mailto:advkranthinaidu@yahoo.com"
                                     className="hover:text-amber-400 transition-colors break-all"
                                 >
-                                    bkranthinaidu@yahoo.com
+                                    advkranthinaidu@yahoo.com
                                 </a>
                             </li>
                         </ul>
@@ -82,20 +90,20 @@ export default function Footer() {
                 <div className="border-t border-slate-700 mt-8 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
                         <p>&copy; {new Date().getFullYear()} Khyathi Associates. All rights reserved.</p>
-                        <div className="flex items-center space-x-2">
-                            <span className="text-gray-400">Developed by</span>
+                        <div className="flex items-center space-x-1">
+                            <span className="sm:block hidden text-gray-400">Developed by</span>
                             <a
                                 // href="tel:+917382891977"
                                 className="text-amber-400 hover:text-amber-300 transition-colors font-semibold"
                             >
-                                Sreekanth Freelance
+                                Karthik Freelance
                             </a>
                             <span className="text-gray-400">|</span>
                             <a
                                 href="tel:+917382891977"
                                 className="text-amber-400 hover:text-amber-300 transition-colors"
                             >
-                                +91 7382891977
+                                +91 73828 91977
                             </a>
                         </div>
                     </div>

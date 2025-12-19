@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
 import {
     FaGraduationCap,
     FaAward,
@@ -10,6 +11,17 @@ import {
     FaTwitter,
     FaGlobe,
 } from 'react-icons/fa';
+
+export const metadata: Metadata = {
+    title: "Kranthi Naidu Boya - Advocate Profile | Khyathi Associates",
+    description: "Kranthi Naidu Boya - Accomplished Advocate with LL.B, PGD in Cyber Laws & Cyber Forensics, and B.Tech in CSE. Expert in litigation, arbitration, corporate law, and government cases. Contact: +91 9963820823",
+    keywords: "Kranthi Naidu Boya, advocate, lawyer, legal expert, cyber law, corporate law, litigation, NCLT, Supreme Court advocate",
+    openGraph: {
+        title: "Kranthi Naidu Boya - Advocate | Khyathi Associates",
+        description: "Accomplished Advocate with expertise in litigation, arbitration, corporate law, and government cases.",
+        url: "https://khyathiassociates.com/profile",
+    },
+};
 
 export default function Profile() {
     const experiences = [
@@ -219,11 +231,11 @@ export default function Profile() {
                             {/* Contact Details */}
                             <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 text-sm justify-center lg:justify-start">
                                 <a
-                                    href="mailto:bkranthinaidu@yahoo.com"
+                                    href="mailto:advkranthinaidu@yahoo.com"
                                     className="flex items-center space-x-2 text-gray-300 hover:text-amber-400 transition-colors"
                                 >
                                     <FaEnvelope className="text-amber-400 flex-shrink-0" />
-                                    <span className="break-all">bkranthinaidu@yahoo.com</span>
+                                    <span className="break-all">advkranthinaidu@yahoo.com</span>
                                 </a>
                                 <a
                                     href="tel:+919963820823"
@@ -234,7 +246,7 @@ export default function Profile() {
                                 </a>
                                 <div className="flex items-center space-x-2 text-gray-300">
                                     <FaMapMarkerAlt className="text-amber-400 flex-shrink-0" />
-                                    <span>Hyderabad & Vijayawada, India</span>
+                                    <span>Offices across India: New Delhi, Hyderabad, Amaravati, Mumbai, Kolkata, Kochi, Chennai, Dispur (Assam), Lucknow, Bengaluru, Bhopal</span>
                                 </div>
                                 <a
                                     href="https://bkranthinaidu.github.io"
@@ -277,15 +289,11 @@ export default function Profile() {
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl font-bold text-slate-900 mb-6">Professional Summary</h2>
                     <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                        <p className="mb-4">
+                            Accomplished Advocate with LL.B from National Law School Bangalore (NLSIU), PGD in Cyber Laws & Cyber Forensics, M.A. in Political Science and Public Administration, and B.Tech in CSE, uniquely integrating legal expertise with technological proficiency.
+                        </p>
                         <p>
-                            Accomplished Advocate with LL.B, PGD in Cyber Laws & Cyber Forensics, and B.Tech in
-                            CSE, uniquely integrating legal expertise with technological proficiency. Skilled in
-                            high-stakes litigation, arbitration, contract negotiation, regulatory compliance, and
-                            multi-jurisdictional advisory. Adept in policy advocacy, digital evidence, and cyber
-                            forensics, with a proven record of delivering precise, outcome-driven legal solutions
-                            across civil, criminal, corporate, and public law matters. Recognized for strategic
-                            thinking, stakeholder negotiation, and leadership in both legal and community-focused
-                            initiatives.
+                            Skilled in high-stakes litigation, arbitration, contract negotiation, regulatory compliance, and multi-jurisdictional advisory. Adept in policy advocacy, digital evidence, and cyber forensics, with a proven record of delivering precise, outcome-driven legal solutions across civil, criminal, corporate, and public law matters. Recognized for strategic thinking, stakeholder negotiation, and leadership in both legal and community-focused initiatives.
                         </p>
                     </div>
                 </div>
@@ -414,6 +422,52 @@ export default function Profile() {
                             <span className="font-semibold">PGD In Cyber Laws & Cyber Forensics:</span> –
                             Specialized in digital evidence, cyber law, and regulatory frameworks.
                         </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Gallery Section */}
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Gallery</h2>
+                        <div className="w-24 h-1 bg-amber-400 mx-auto mb-6"></div>
+                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                            Moments from professional engagements, court appearances, and community initiatives
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                        {[
+                            '1.jpg',
+                            'ap dsp.jpg',
+                            'aviation 2.jpg',
+                            'cbn.jpg',
+                            'cji gradutation.jpg',
+                            'dgp.jpg',
+                            'gorup.jpg',
+                            'green.jpg',
+                            'IMG-20251219-WA0051.jpg',
+                            'ji.jpg',
+                            'lokesh.jpg',
+                            'minister some.jpg',
+                            'newspaper.jpg',
+                            'preseident 2.jpg',
+                            'rahul gandhi.jpg',
+                            'restore st status.jpg',
+                        ].map((imageName, index) => (
+                            <div
+                                key={index}
+                                className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-200 group cursor-pointer"
+                            >
+                                <Image
+                                    src={`/images/gallery/${imageName}`}
+                                    alt={`Gallery image ${index + 1} - Advocate Kranthi Naidu Boya`}
+                                    fill
+                                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                                />
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-200"></div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>

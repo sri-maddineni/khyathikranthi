@@ -1,4 +1,16 @@
+import { Metadata } from 'next';
 import { FaAward, FaUsers, FaMapMarkerAlt, FaBullseye } from 'react-icons/fa';
+
+export const metadata: Metadata = {
+    title: "About Us - Khyathi Associates",
+    description: "Learn about Khyathi Associates - A group of dedicated advocates focused on taking up and solving legal issues in Indian courts. Our mission, values, and expertise in legal services.",
+    keywords: "about Khyathi Associates, law firm, legal services, advocates, legal expertise, mission, values",
+    openGraph: {
+        title: "About Khyathi Associates - Legal Services",
+        description: "A group of dedicated advocates focused on taking up and solving legal issues in Indian courts.",
+        url: "https://khyathiassociates.com/about",
+    },
+};
 
 export default function About() {
     const values = [
@@ -20,7 +32,7 @@ export default function About() {
         {
             icon: <FaMapMarkerAlt className="text-3xl" />,
             title: 'Accessibility',
-            description: 'With offices in Hyderabad and Vijayawada, we are accessible to clients across India.',
+            description: 'With offices in New Delhi, Hyderabad, Amaravati, Mumbai, Kolkata, Kochi, Chennai, Dispur (Assam), Lucknow, Bengaluru, and Bhopal, we are accessible to clients across India.',
         },
     ];
 
@@ -55,7 +67,7 @@ export default function About() {
                                 proficiency to deliver precise, outcome-driven solutions.
                             </p>
                             <p>
-                                With a strong presence in Hyderabad and Vijayawada, we serve clients across India,
+                                With offices in New Delhi, Hyderabad, Amaravati, Mumbai, Kolkata, Kochi, Chennai, Dispur (Assam), Lucknow, Bengaluru, and Bhopal, we serve clients across India,
                                 representing them in Supreme Court, High Courts, and various tribunals including
                                 NCLT/NCLAT. Our team is committed to providing strategic and result-oriented legal
                                 representation.
