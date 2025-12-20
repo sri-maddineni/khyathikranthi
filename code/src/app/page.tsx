@@ -45,14 +45,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
             {/* <div className="flex justify-center mb-6">
-              <Image
+        <Image
                 src="/images/khyathi.png"
                 alt="Khyathi Associates Logo"
                 width={120}
                 height={120}
                 className="object-contain"
-                priority
-              />
+          priority
+        />
             </div> */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Khyathi Associates
@@ -75,7 +75,7 @@ export default function Home() {
               <Link
                 href="/contact"
                 className="bg-transparent border-2 border-amber-400 text-amber-400 px-8 py-3 rounded-lg font-semibold hover:bg-amber-400 hover:text-slate-900 transition-colors duration-200"
-              >
+          >
                 Get in Touch
               </Link>
             </div>

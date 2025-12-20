@@ -7,10 +7,12 @@ import {
     FaEnvelope,
     FaMapMarkerAlt,
     FaLinkedin,
-    FaGithub,
+    // FaGithub,
     FaTwitter,
     FaGlobe,
     FaUserTie,
+    FaFacebook,
+    FaYoutube,
 } from 'react-icons/fa';
 
 export const metadata: Metadata = {
@@ -57,14 +59,19 @@ export default function Contact() {
 
     const socialLinks = [
         {
+            icon: <FaFacebook className="text-2xl" />,
+            label: 'Facebook',
+            href: 'https://www.facebook.com/share/14VbnAKfmXY/',
+        },
+        {
+            icon: <FaYoutube className="text-2xl" />,
+            label: 'YouTube',
+            href: 'https://youtube.com/@kranthirebel5?si=dPhIkowcq5wnUSh2',
+        },
+        {
             icon: <FaLinkedin className="text-2xl" />,
             label: 'LinkedIn',
             href: 'https://linkedin.com/in/kranthirebel5',
-        },
-        {
-            icon: <FaGithub className="text-2xl" />,
-            label: 'GitHub',
-            href: 'https://bkranthinaidu.github.io',
         },
         {
             icon: <FaTwitter className="text-2xl" />,

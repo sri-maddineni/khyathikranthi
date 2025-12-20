@@ -12,7 +12,7 @@ export default function Navbar() {
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },
         { href: '/cases', label: 'Cases Dealt' },
-        { href: '/profile', label: 'Our Advocate' },
+        { href: '/gallery', label: 'Gallery' },
         { href: '/contact', label: 'Contact' },
     ];
 

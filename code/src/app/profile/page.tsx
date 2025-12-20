@@ -1,15 +1,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import Gallery from '@/components/Gallery';
 import {
     FaGraduationCap,
     FaAward,
     FaEnvelope,
     FaPhone,
     FaMapMarkerAlt,
-    FaGithub,
+    // FaGithub,
     FaTwitter,
     FaGlobe,
+    FaFacebook,
+    FaYoutube,
 } from 'react-icons/fa';
 
 export const metadata: Metadata = {
@@ -260,6 +263,24 @@ export default function Profile() {
                             </div>
                             <div className="flex justify-center lg:justify-start gap-4 mt-4">
                                 <a
+                                    href="https://www.facebook.com/share/14VbnAKfmXY/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-gray-300 hover:text-amber-400 transition-colors"
+                                    aria-label="Facebook"
+                                >
+                                    <FaFacebook className="text-2xl" />
+                                </a>
+                                <a
+                                    href="https://youtube.com/@kranthirebel5?si=dPhIkowcq5wnUSh2"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-gray-300 hover:text-amber-400 transition-colors"
+                                    aria-label="YouTube"
+                                >
+                                    <FaYoutube className="text-2xl" />
+                                </a>
+                                <a
                                     href="https://twitter.com/kranthirebel5"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -273,9 +294,9 @@ export default function Profile() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-gray-300 hover:text-amber-400 transition-colors"
-                                    aria-label="GitHub"
+                                    aria-label="Website"
                                 >
-                                    <FaGithub className="text-2xl" />
+                                    <FaGlobe className="text-2xl" />
                                 </a>
                             </div>
                         </div>
@@ -436,39 +457,27 @@ export default function Profile() {
                             Moments from professional engagements, court appearances, and community initiatives
                         </p>
                     </div>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                        {[
-                            '1.jpg',
-                            'ap dsp.jpg',
-                            'aviation 2.jpg',
-                            'cbn.jpg',
-                            'cji gradutation.jpg',
-                            'dgp.jpg',
-                            'gorup.jpg',
-                            'green.jpg',
-                            'IMG-20251219-WA0051.jpg',
-                            'ji.jpg',
-                            'lokesh.jpg',
-                            'minister some.jpg',
-                            'newspaper.jpg',
-                            'preseident 2.jpg',
-                            'rahul gandhi.jpg',
-                            'restore st status.jpg',
-                        ].map((imageName, index) => (
-                            <div
-                                key={index}
-                                className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-200 group cursor-pointer"
-                            >
-                                <Image
-                                    src={`/images/gallery/${imageName}`}
-                                    alt={`Gallery image ${index + 1} - Advocate Kranthi Naidu Boya`}
-                                    fill
-                                    className="object-cover group-hover:scale-110 transition-transform duration-300"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-200"></div>
-                            </div>
-                        ))}
-                    </div>
+                    <Gallery
+                        images={[
+                            '1 president.jpg',
+                            '2 cji gradutation.jpg',
+                            '3.jpg',
+                            '4 priyanka.jpg',
+                            '5 cbn.jpg',
+                            '6 lokesh.jpg',
+                            '7 aviation 2.jpg',
+                            '8 dgp.jpg',
+                            '9 bar council.jpg',
+                            '9 kurnool sp.jpg',
+                            '10 np.jpg',
+                            '11 immg.jpg',
+                            '12 img.jpg',
+                            '13 restore st status.jpg',
+                            '14 img.jpg',
+                            '15 img.jpg',
+                        ]}
+                        altPrefix="Gallery image"
+                    />
                 </div>
             </section>
 

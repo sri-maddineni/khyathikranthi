@@ -109,7 +109,7 @@ export default function RootLayout({
         <StructuredData />
         <Navbar />
         <main className="min-h-screen">
-          {children}
+        {children}
         </main>
         <Footer />
       </body>
