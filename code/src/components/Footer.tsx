@@ -65,7 +65,7 @@ export default function Footer() {
                                 <FaMapMarkerAlt className="text-amber-400 mt-1 flex-shrink-0" />
                                 <div className="text-xs">
                                     <p className="mb-1">Offices in:</p>
-                                    <p>New Delhi, Hyderabad, Amaravati, Mumbai, Kolkata, Kochi, Chennai, Dispur (Assam), Lucknow, Bengaluru, Bhopal</p>
+                                    <p>New Delhi, Hyderabad, Amaravati, Mumbai, Kolkata, Kochi, Chennai, Dispur (Assam), Lucknow, Bengaluru, Bhopal, Jaipur.</p>
                                 </div>
                             </li>
                             <li className="flex items-start space-x-3">

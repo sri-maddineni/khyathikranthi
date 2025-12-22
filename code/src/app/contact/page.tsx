@@ -39,6 +39,7 @@ export default function Contact() {
         'Lucknow',
         'Bengaluru',
         'Bhopal',
+        'Jaipur'
     ];
 
     const contactInfo = [
@@ -145,9 +146,17 @@ export default function Contact() {
                                                 <span className="text-amber-400 mr-2 font-bold">•</span>
                                                 <span>LL.B from National Law School Bangalore (NLSIU)</span>
                                             </li>
+
+                                           
+
+
                                             <li className="flex items-start">
                                                 <span className="text-amber-400 mr-2 font-bold">•</span>
-                                                <span>Cyber Laws and Cyber Forensics</span>
+                                                <span>Cyber Laws and Cyber Forensics (NLU DELHI)</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <span className="text-amber-400 mr-2 font-bold">•</span>
+                                                <span> Legislative Drafting (ICPS & NLU Delhi)</span>
                                             </li>
                                         </ul>
                                     </div>

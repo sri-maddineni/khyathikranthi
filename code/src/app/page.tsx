@@ -60,10 +60,8 @@ export default function Home() {
             <p className="text-xl sm:text-2xl text-amber-400 mb-4 font-semibold">
               Legal Excellence | Strategic Solutions
             </p>
-            <p className="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
-              A group of advocates focused on taking up and solving legal issues in Indian courts.
-              We provide strategic and result-oriented legal solutions across civil, criminal,
-              corporate, and public law matters.
+            <p className="text-md sm:text-lg text-gray-300 mb-8 leading-relaxed">
+            Khyathi Associates is a full-service law firm comprising a dedicated team of advocates offering strategic, result-oriented legal solutions across all courts and tribunals in India. Our practice spans civil, criminal, corporate, constitutional, and public law, enabling us to effectively handle any type of legal matter with professionalism, precision, and integrity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -117,7 +115,7 @@ export default function Home() {
               },
               {
                 icon: <FaSmile className="text-4xl lg:text-5xl" />,
-                value: 955,
+                value: 1423,
                 suffix: '+',
                 label: 'Happy Clients',
               },

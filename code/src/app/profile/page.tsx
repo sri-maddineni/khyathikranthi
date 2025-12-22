@@ -13,6 +13,7 @@ import {
     FaGlobe,
     FaFacebook,
     FaYoutube,
+    FaLinkedin,
 } from 'react-icons/fa';
 
 export const metadata: Metadata = {
@@ -104,11 +105,15 @@ export default function Profile() {
     const education = [
         {
             degree: 'LL.B - Bachelor of Legislative Law',
-            institution: 'Rayalaseema University – Kurnool',
+            institution: 'National Law School of India University - Bangalore',
         },
         {
             degree: 'PGD in Cyber Laws & Cyber Forensics',
-            institution: 'National Law School of India University – Bangalore',
+            institution: 'National Law University – Delhi',
+        },
+        {
+            degree: 'Legislative Drafting',
+            institution: 'ICPS & National Law University - Delhi',
         },
         {
             degree: 'M.A. in Public Administration & Political Science',
@@ -188,7 +193,7 @@ export default function Profile() {
                         <div className="flex-1 w-full grid grid-cols-2 sm:grid-cols-2 gap-3 sm:gap-4 max-w-2xl">
                             <div className="relative aspect-square rounded-lg overflow-hidden shadow-xl">
                                 <Image
-                                    src="/images/k.jpg"
+                                    src="/images/highcourt.jpeg"
                                     alt="Kranthi Naidu Boya"
                                     fill
                                     className="object-cover"
@@ -249,9 +254,9 @@ export default function Profile() {
                                 </a>
                                 <div className="flex items-center space-x-2 text-gray-300">
                                     <FaMapMarkerAlt className="text-amber-400 flex-shrink-0" />
-                                    <span>Offices across India: New Delhi, Hyderabad, Amaravati, Mumbai, Kolkata, Kochi, Chennai, Dispur (Assam), Lucknow, Bengaluru, Bhopal</span>
+                                    <span>Offices across India: New Delhi, Hyderabad, Amaravati, Mumbai, Kolkata, Kochi, Chennai, Dispur (Assam), Lucknow, Bengaluru, Bhopal, Jaipur.</span>
                                 </div>
-                                <a
+                                {/* <a
                                     href="https://bkranthinaidu.github.io"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -259,7 +264,7 @@ export default function Profile() {
                                 >
                                     <FaGlobe className="text-amber-400 flex-shrink-0" />
                                     <span className="break-all">bkranthinaidu.github.io</span>
-                                </a>
+                                </a> */}
                             </div>
                             <div className="flex justify-center lg:justify-start gap-4 mt-4">
                                 <a
@@ -279,6 +284,15 @@ export default function Profile() {
                                     aria-label="YouTube"
                                 >
                                     <FaYoutube className="text-2xl" />
+                                </a>
+                                <a
+                                    href="https://linkedin.com/in/kranthirebel5"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-gray-300 hover:text-amber-400 transition-colors"
+                                    aria-label="Website"
+                                >
+                                    <FaLinkedin className="text-2xl" />
                                 </a>
                                 <a
                                     href="https://twitter.com/kranthirebel5"
