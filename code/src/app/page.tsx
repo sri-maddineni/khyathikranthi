@@ -153,7 +153,7 @@ export default function Home() {
               with technological proficiency to deliver precise, outcome-driven solutions.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              With offices in New Delhi, Hyderabad, Amaravati, Mumbai, Kolkata, Kochi, Chennai, Dispur (Assam), Lucknow, Bengaluru, and Bhopal, we serve clients across India, representing
+              With offices in New Delhi, Hyderabad, Amaravati, Mumbai, Kolkata, Kochi, Chennai, Dispur (Assam), Lucknow, Bengaluru, Bhopal and Jaipur. we serve clients across India, representing
               them in Supreme Court, High Courts, and various tribunals including NCLT/NCLAT.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
